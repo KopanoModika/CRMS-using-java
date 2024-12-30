@@ -29,6 +29,7 @@ public static void main(String[] args) {
 
             customerService.addCustomer(name, email, phone);
         }
+        break;
         //View all customers
         case 2:{
             System.out.println("---Customers---\n");
@@ -36,6 +37,7 @@ public static void main(String[] args) {
                 System.out.println(customer);
             }
         }
+        break;
 
         //Update customers
         case 3:{
@@ -51,6 +53,7 @@ public static void main(String[] args) {
 
             customerService.updateCustomer(id, name, name, phone);
         }
+        break;
 
         //Delete customer
         case 4:{
@@ -60,7 +63,14 @@ public static void main(String[] args) {
 
             customerService.deleteCustomer(id);
         }
+        break;
 
+        //Exit application
+        case 5:{
+            System.out.println("thank you for using this application have a great day :)\n");
+            sc.close();
+            System.exit(0);
+        }
        }
     }
     
