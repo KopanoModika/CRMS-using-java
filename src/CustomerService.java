@@ -34,7 +34,7 @@ public class CustomerService {
          System.out.println("Customer not found");
       }
    }
-/* 
+
    public void deleteCustomer(int id){
       Customer customer = findCustomerById(id);
       if (customer != null) {
@@ -44,5 +44,5 @@ public class CustomerService {
          System.out.println("Customer not found");
       }
          
-   }*/
+   }
 }

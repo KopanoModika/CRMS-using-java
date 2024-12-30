@@ -52,6 +52,15 @@ public static void main(String[] args) {
             customerService.updateCustomer(id, name, name, phone);
         }
 
+        //Delete customer
+        case 4:{
+            System.out.println("Please enter a customer ID to delete\n");
+            int id = sc.nextInt();
+            sc.nextLine();
+
+            customerService.deleteCustomer(id);
+        }
+
        }
     }
     
