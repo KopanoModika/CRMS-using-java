@@ -31,10 +31,25 @@ public static void main(String[] args) {
         }
         //View all customers
         case 2:{
-            System.out.println("---Customers---");
+            System.out.println("---Customers---\n");
             for(Customer customer: customerService.getAllCustomers()){
                 System.out.println(customer);
             }
+        }
+
+        //Update customers
+        case 3:{
+            System.out.println("Please enter customer ID:\n");
+            int id = sc.nextInt();
+            sc.nextLine();
+
+            System.out.println("Please Enter a new name\n");
+            String name = sc.nextLine();
+
+            System.out.println("Please enter a new phone:\n");
+            String phone = sc.nextLine();
+
+            customerService.updateCustomer(id, name, name, phone);
         }
 
        }
