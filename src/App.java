@@ -29,7 +29,14 @@ public static void main(String[] args) {
 
             customerService.addCustomer(name, email, phone);
         }
-        
+        //View all customers
+        case 2:{
+            System.out.println("---Customers---");
+            for(Customer customer: customerService.getAllCustomers()){
+                System.out.println(customer);
+            }
+        }
+
        }
     }
     
