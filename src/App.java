@@ -10,10 +10,27 @@ public static void main(String[] args) {
        "3. Update Customer\n"+
        "4. Delete Customer\n"+
        "5. Exit\n"+
-       "To proceed, please select an option");
+       "To proceed, please select an option\n");
 
        int option = sc.nextInt();
        sc.nextLine();
+
+       switch (option) {
+        //This case adds a new user
+        case 1: {
+            System.out.println("Please enter a your name:\n");
+            String name = sc.nextLine();
+
+            System.out.println("Please enter your email:\n");
+            String email = sc.nextLine();
+
+            System.out.println("Please enter your phone number:\n");
+            String phone = sc.nextLine();
+
+            customerService.addCustomer(name, email, phone);
+        }
+        
+       }
     }
     
 }

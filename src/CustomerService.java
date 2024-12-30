@@ -13,6 +13,7 @@ public class CustomerService {
       return customers;
    }
 
+   
    public Customer findCustomerById(int id){
       for (Customer customer: customers) {
          if (customer.id() == id) {
@@ -33,7 +34,7 @@ public class CustomerService {
          System.out.println("Customer not found");
       }
    }
-
+/* 
    public void deleteCustomer(int id){
       Customer customer = findCustomerById(id);
       if (customer != null) {
@@ -42,5 +43,6 @@ public class CustomerService {
       }else{
          System.out.println("Customer not found");
       }
-   }
+         
+   }*/
 }
