@@ -11,8 +11,10 @@ public static void main(String[] args) {
        "4. Delete Customer\n"+
        "5. Exit\n"+
        "To proceed, please select an option");
+
+       int option = sc.nextInt();
+       sc.nextLine();
     }
-    int option = sc.nextInt();
-    sc.nextLine();
+    
 }
 }
